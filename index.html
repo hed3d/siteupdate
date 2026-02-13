@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Класс 10Л | Наш дружный класс</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles.css">
+  </head>
+  <body>
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="navbar">
+      <div class="nav-logo">
+        <span class="logo-text">10</span>
+        <span class="logo-letter">Л</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Главная</a></li>
+        <li><a href="#about" class="nav-link">О нас</a></li>
+        <li><a href="#gallery" class="nav-link">Галерея</a></li>
+        <li><a href="#events" class="nav-link">События</a></li>
+        <li><a href="#contact" class="nav-link">Контакты</a></li>
+      </ul>
+      <button class="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-badge">Добро пожаловать</div>
+          <h1 class="hero-title">
+            Класс <span class="highlight">10Л</span>
+          </h1>
+          <p class="hero-subtitle">
+            Мы — команда талантливых и амбициозных учеников,
+            стремящихся к знаниям и новым достижениям
+          </p>
+          <div class="hero-buttons">
+            <button class="btn btn-primary">
+              <span>Узнать больше</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <button class="btn btn-secondary">Наши достижения</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card card-1">
+            <span class="card-icon">📚</span>
+            <span class="card-text">Отличники</span>
+          </div>
+          <div class="floating-card card-2">
+            <span class="card-icon">🏆</span>
+            <span class="card-text">Победители</span>
+          </div>
+          <div class="floating-card card-3">
+            <span class="card-icon">🎯</span>
+            <span class="card-text">Целеустремленные</span>
+          </div>
+          <div class="orb orb-1"></div>
+          <div class="orb orb-2"></div>
+          <div class="orb orb-3"></div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="section-header">
+          <span class="section-tag">О нас</span>
+          <h2 class="section-title">Наш класс — это семья</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <h3>25 учеников</h3>
+            <p>Дружная команда единомышленников, готовых поддержать друг друга</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <h3>Лучший класс</h3>
+            <p>Побеждаем в олимпиадах и конкурсах, покоряем новые вершины</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>100% успеваемость</h3>
+            <p>Стремимся к отличным результатам и помогаем друг другу</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery">
+        <div class="section-header">
+          <span class="section-tag">Галерея</span>
+          <h2 class="section-title">Наши яркие моменты</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item large">
+            <div class="gallery-placeholder">
+              <span>День знаний</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">
+              <span>Поход</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">
+              <span>Выпускной 9 класса</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">
+              <span>Конкурсы</span>
+            </div>
+          </div>
+          <div class="gallery-item large">
+            <div class="gallery-placeholder">
+              <span>Классный час</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section id="events" class="events">
+        <div class="section-header">
+          <span class="section-tag">События</span>
+          <h2 class="section-title">Ближайшие мероприятия</h2>
+        </div>
+        <div class="events-list">
+          <div class="event-card">
+            <div class="event-date">
+              <span class="day">15</span>
+              <span class="month">Фев</span>
+            </div>
+            <div class="event-info">
+              <h3>День Святого Валентина</h3>
+              <p>Классный вечер с играми и конкурсами</p>
+            </div>
+            <button class="btn btn-small">Подробнее</button>
+          </div>
+          <div class="event-card">
+            <div class="event-date">
+              <span class="day">23</span>
+              <span class="month">Фев</span>
+            </div>
+            <div class="event-info">
+              <h3>День защитника Отечества</h3>
+              <p>Поздравляем наших мальчиков</p>
+            </div>
+            <button class="btn btn-small">Подробнее</button>
+          </div>
+          <div class="event-card">
+            <div class="event-date">
+              <span class="day">08</span>
+              <span class="month">Мар</span>
+            </div>
+            <div class="event-info">
+              <h3>8 Марта</h3>
+              <p>Праздничный концерт для девочек</p>
+            </div>
+            <button class="btn btn-small">Подробнее</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="contact-container">
+          <div class="contact-info">
+            <span class="section-tag">Контакты</span>
+            <h2>Свяжитесь с нами</h2>
+            <p>Есть вопросы или предложения? Мы всегда открыты для общения!</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>class10l@school.ru</span>
+              </div>
+              <div class="contact-item">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+                <span>Школа №1, каб. 305</span>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" placeholder="Ваше имя" class="form-input">
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Email" class="form-input">
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Сообщение" class="form-input form-textarea"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Отправить сообщение</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"/>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+      <!-- Custom Section - Your Content Here -->
+      <section id="custom" class="custom-section">
+        <div class="custom-content">
+          <!-- Вставь свой контент сюда -->
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <span class="logo-text">10</span>
+          <span class="logo-letter">Л</span>
+        </div>
+        <p>© 2026 Класс 10Л. Все права защищены.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="VK">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M15.684 0H8.316C1.592 0 0 1.592 0 8.316v7.368C0 22.408 1.592 24 8.316 24h7.368C22.408 24 24 22.408 24 15.684V8.316C24 1.592 22.408 0 15.684 0zm3.692 17.123h-1.744c-.66 0-.864-.525-2.05-1.727-1.033-1-1.49-1.135-1.744-1.135-.356 0-.458.102-.458.593v1.575c0 .424-.135.678-1.253.678-1.846 0-3.896-1.118-5.335-3.202C4.624 10.857 4 8.673 4 8.233c0-.254.102-.491.593-.491h1.744c.44 0 .61.203.78.678.863 2.49 2.303 4.675 2.896 4.675.22 0 .322-.102.322-.66V9.721c-.068-1.186-.695-1.287-.695-1.71 0-.203.17-.407.44-.407h2.744c.372 0 .508.203.508.643v3.473c0 .372.17.508.271.508.22 0 .407-.136.814-.542 1.27-1.422 2.18-3.61 2.18-3.61.119-.254.322-.491.762-.491h1.744c.525 0 .644.27.525.643-.22 1.017-2.354 4.031-2.354 4.031-.186.305-.254.44 0 .78.186.254.796.779 1.203 1.253.745.847 1.32 1.558 1.473 2.05.17.49-.085.744-.576.744z"/>
+            </svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Telegram">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
