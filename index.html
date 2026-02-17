@@ -1,85 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> 10Л </title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <canvas id="particles-canvas"></canvas>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>10Л</title>
 
-    <nav class="navbar">
-      <div class="nav-logo">
-        <span class="logo-text">✎10</span>
-        <span class="logo-letter">Л</span>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home" class="nav-link active">головна</a></li>
-        <li><a href="#about" class="nav-link">про нас</a></li>
-        <li><a href="#gallery" class="nav-link">Галерея</a></li>
-        <li><a href="#events" class="nav-link">активності</a></li>
-        <li><a href="#contact" class="nav-link">Контакти</a></li>
-      </ul>
-      <button class="mobile-menu-btn">
-        <span></span>
-        <span></span>
-        <span></span>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<canvas id="particles-canvas"></canvas>
+
+<nav class="navbar">
+  <div class="nav-logo">
+    <span class="logo-text">✎10</span>
+    <span class="logo-letter">Л</span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="nav-link active">головна</a></li>
+    <li><a href="#about" class="nav-link">про нас</a></li>
+    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+    <li><a href="#events" class="nav-link">активності</a></li>
+    <li><a href="#contact" class="nav-link">Контакти</a></li>
+  </ul>
+
+  <button class="mobile-menu-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<main>
+
+<section id="home" class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">вітання</div>
+
+    <h1 class="hero-title">
+      10<span class="highlight">л клас</span>
+    </h1>
+
+    <div class="hero-buttons">
+      <button class="btn btn-primary">
+        <span>дізнатися більше</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
       </button>
-    </nav>
 
-    <main>
-      <!-- Hero Section -->
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <div class="hero-badge">вітання</div>
-          <h1 class="hero-title">
-             10<span class="highlight">л клас</span>
-          </h1>
-          <div class="hero-buttons">
-            <button class="btn btn-primary">
-              <span>дізнатися більше</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M5 12h14M12 5l7 7-7 7"/>
-              </svg>
-            </button>
-            <button class="btn btn-secondary">наші досягнення</button>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="floating-card card-1">
-            <span class="card-icon">⚐</span>
-            <span class="card-text">досягнення</span>
-          </div>
-          <div class="floating-card card-2">
-            <span class="card-icon">♟</span>
-            <span class="card-text">премоги</span>
-          </div>
-          <div class="floating-card card-3">
-            <span class="card-icon">⛏︎</span>
-            <span class="card-text">цільоспрямованість</span>
-          </div>
-          <div class="orb orb-1"></div>
-          <div class="orb orb-2"></div>
-          <div class="orb orb-3"></div>
-        </div>
-      <!-- rozklad -->
-      <section id="about" class="abosut">
-        <div class="sectiobn-header">
-<div class="forsadm-group">
-    <!-- Понеділок -->
-    <h3 data-day="monday"><span class="logo-text">понеділок</span></h3>
-    <table data-day="monday">
-      <tr><td>📚Українська література 08:00–08:45 </td><td><a class="btn btn-primary" href="https://meet.google.com/ked-wbuz-bkz">Онлайн урок</a></td></tr>
-      <tr><td>🏰Історія України 08:50–09:35 </td><td><a class="btn btn-primary" href="https://meet.google.com/ewk-rjdu-rxq">Онлайн урок</a></td></tr>
-      <tr><td>💻Інформатика 09:4 –10:30 </td><td><a class="btn btn-primary" href="https://meet.google.com/xha-ymjx-sga">група 1</a> <a class="btn btn-primary" href="https://meet.google.com/aya-qogn-ytw">група 2</a></td></tr>
-      <tr><td>🗣️Англійська мова 10:40–11:25 </td><td><a class="btn btn-primary" href=https://meet.google.com/ekh-jxsg-kwa">група 1</a> <a class="btn btn-primary" href="https://meet.google.com/euj-tcid-vuk">група 2</a></td></tr>
-      <tr><td>➗Математика 11:35–12:20 </td><td><a class="btn btn-primary" href="https://meet.google.com/pbv-todf-wmq">Онлайн урок</a></td></tr>
-      <tr><td>➗Математика 12:25 13:10 </td><td><a class="btn btn-primary" href="https://meet.google.com/pbv-todf-wmq">Онлайн урок</a></td></tr>
-    </table>
+      <button class="btn btn-secondary">наші досягнення</button>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="floating-card card-1">
+      <span class="card-icon">⚐</span>
+      <span class="card-text">досягнення</span>
+    </div>
+
+    <div class="floating-card card-2">
+      <span class="card-icon">♟</span>
+      <span class="card-text">премоги</span>
+    </div>
+
+    <div class="floating-card card-3">
+      <span class="card-icon">⛏︎</span>
+      <span class="card-text">цільоспрямованість</span>
+    </div>
+
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+</section>
+
+
+<!-- РОЗКЛАД -->
+<section id="about" class="abosut">
+  <div class="sectiobn-header">
+    <div class="forsadm-group">
+
+      <!-- Понеділок -->
+      <h3 data-day="monday"><span class="logo-text">понеділок</span></h3>
+      <table data-day="monday">
+        <tr><td>📚Українська література 08:00–08:45</td><td><a class="btn btn-primary" href="https://meet.google.com/ked-wbuz-bkz">Онлайн урок</a></td></tr>
+        <tr><td>🏰Історія України 08:50–09:35</td><td><a class="btn btn-primary" href="https://meet.google.com/ewk-rjdu-rxq">Онлайн урок</a></td></tr>
+        <tr><td>💻Інформатика 09:40–10:30</td><td><a class="btn btn-primary" href="https://meet.google.com/xha-ymjx-sga">група 1</a> <a class="btn btn-primary" href="https://meet.google.com/aya-qogn-ytw">група 2</a></td></tr>
+        <tr><td>🗣️Англійська мова 10:40–11:25</td><td><a class="btn btn-primary" href="https://meet.google.com/ekh-jxsg-kwa">група 1</a> <a class="btn btn-primary" href="https://meet.google.com/euj-tcid-vuk">група 2</a></td></tr>
+        <tr><td>➗Математика 11:35–12:20</td><td><a class="btn btn-primary" href="https://meet.google.com/pbv-todf-wmq">Онлайн урок</a></td></tr>
+        <tr><td>➗Математика 12:25–13:10</td><td><a class="btn btn-primary" href="https://meet.google.com/pbv-todf-wmq">Онлайн урок</a></td></tr>
+      </table>
+
+      <!-- остальные дни без изменений -->
 
     <!-- Вівторок -->
     <h3 data-day="tuesday"><span class="logo-text">вівторок</span></h3>
